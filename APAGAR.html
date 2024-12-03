@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde Masculina e Bem-Estar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+        header {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        nav {
+            background-color: #0d47a1;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 16px 20px;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ff4081;
+            color: black;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .section {
+            background-color: #212121;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            flex: 1;
+            min-width: 300px;
+        }
+        .section h2 {
+            color: #ff4081;
+        }
+        .section img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0d47a1;
+            color: white;
+        }
+        .form-input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: white;
+        }
+        .button {
+            background-color: #ff4081;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #ff80ab;
+        }
+        .index {
+            background-color: #1a237e;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .forum {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 8px;
+            display: none; /* O fórum está inicialmente escondido */
+        }
+        .login-modal-content, .signup-modal-content {
+            background-color: #212121;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+        .close {
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        #loginModal, #signupModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        .post {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #424242;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .post h3 {
+            color: #ff4081;
+        }
+        .faq-section {
+            margin-top: 30px;
+        }
+        .faq-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .faq-section li {
+            background-color: #424242;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .faq-section li:hover {
+            background-color: #616161;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Saúde Masculina e Bem-Estar</h1>
+    <p>Explore informações educativas sobre cuidados com o corpo e saúde sexual</p>
+</header>
+
+<nav>
+    <a href="#introducao">Introdução</a>
+    <a href="#cuidados">Cuidados com a Saúde Sexual</a>
+    <a href="#higiene">Higiene e Cuidados</a>
+    <a href="#forum">Fórum Educacional</a>
+</nav>
+
+<div class="container">
+    <div id="introducao" class="section">
+        <h2>Introdução à Saúde Masculina</h2>
+        <p>A saúde masculina envolve uma combinação de fatores físicos, emocionais e sociais. Manter um estilo de vida saudável, fazer exames regulares e entender as necessidades do seu corpo são essenciais para o bem-estar.</p>
+        <img src="https://via.placeholder.com/600x300/003366/ffffff?text=Saúde+Masculina" alt="Saúde Masculina">
+    </div>
+
+    <div id="cuidados" class="section">
+        <h2>Cuidados com a Saúde Sexual</h2>
+        <p>A saúde sexual vai além da função sexual, envolvendo aspectos emocionais, físicos e preventivos. A conscientização sobre doenças sexualmente transmissíveis (DSTs), o uso de proteção e exames periódicos são fundamentais.</p>
+        <ul>
+            <li><strong>Prevenção de DSTs:</strong> Como o uso de preservativos pode reduzir os riscos.</li>
+            <li><strong>Saúde mental:</strong> A importância do diálogo sobre questões emocionais e psicológicas relacionadas à sexualidade.</li>
+            <li><strong>Consultas médicas:</strong> A necessidade de check-ups regulares para monitorar a saúde sexual e reprodutiva.</li>
+        </ul>
+        <img src="https://via.placeholder.com/600x300/003366/ffffff?text=Prevenção+de+DSTs" alt="Prevenção de DSTs">
+    </div>
+
+    <div id="higiene" class="section">
+        <h2>Higiene e Cuidados Pessoais</h2>
+        <p>Manter uma boa higiene genital é importante para a saúde. Aqui estão alguns cuidados essenciais:</p>
+        <ul>
+            <li>Lavar com água morna e sabonete neutro.</li>
+            <li>Evitar o uso excessivo de produtos perfumados ou irritantes.</li>
+            <li>Cuidados com a depilação: como realizar de forma segura e eficaz.</li>
+        </ul>
+        <img src="https://via.placeholder.com/600x300/003366/ffffff?text=Higiene+Genital" alt="Higiene Genital">
+    </div>
+</div>
+
+<!-- Fórum Educacional -->
+<div id="forum" class="forum">
+    <h2>Fórum Educacional</h2>
+    <p>Para discutir tópicos sobre saúde e bem-estar, faça login ou crie uma conta no fórum. Garanta que você respeite os outros participantes e participe de maneira saudável.</p>
+    <button class="button" onclick="openSignupModal()">Criar Conta</button>
+    <button class="button" onclick="openLoginModal()">Entrar no Fórum</button>
+
+    <div id="forumPosts">
+        <!-- Posts simulados -->
+        <div class="post">
+            <h3>Como manter uma boa saúde sexual?</h3>
+            <p>Compartilhe suas dicas e experiências sobre como cuidar da saúde sexual.</p>
+        </div>
+        <div class="post">
+            <h3>Prevenção de Doenças Sexualmente Transmissíveis</h3>
+            <p>Quais práticas você adota para prevenir doenças?</p>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Login -->
+<div id="loginModal">
+    <div class="login-modal-content">
+        <span class="close" onclick="closeLoginModal()">&times;</span>
+        <h3>Login para Fórum</h3>
+        <form onsubmit="handleLogin(event)">
+            <input class="form-input" type="text" id="loginUsername" name="username" placeholder="Nome de Usuário" required><br>
+            <input class="form-input" type="password" id="loginPassword" name="password" placeholder="Senha" required><br>
+            <button class="button" type="submit">Entrar</button>
+        </form>
+    </div>
+</div>
+
+<!-- Modal de Criação de Conta -->
+<div id="signupModal">
+    <div class="signup-modal-content">
+        <span class="close" onclick="closeSignupModal()">&times;</span>
+        <h3>Criar Conta</h3>
+        <form onsubmit="handleSignup(event)">
+            <input class="form-input" type="text" id="signupUsername" name="username" placeholder="Nome de Usuário" required><br>
+            <input class="form-input" type="password" id="signupPassword" name="password" placeholder="Senha" required><br>
+            <button class="button" type="submit">Criar Conta</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Saúde Masculina. Todos os direitos reservados.</p>
+</footer>
+
+<script>
+// Funções de abertura e fechamento dos modais de login e signup
+function openLoginModal() {
+    document.getElementById("loginModal").style.display = "flex";
+}
+
+function closeLoginModal() {
+    document.getElementById("loginModal").style.display = "none";
+}
+
+function openSignupModal() {
+    document.getElementById("signupModal").style.display = "flex";
+}
+
+function closeSignupModal() {
+    document.getElementById("signupModal").style.display = "none";
+}
+
+// Função de registro de usuário
+function handleSignup(event) {
+    event.preventDefault();
+    const username = document.getElementById("signupUsername").value;
+    const password = document.getElementById("signupPassword").value;
+
+    if (username && password) {
+        localStorage.setItem("user", JSON.stringify({ username, password }));
+        alert("Conta criada com sucesso! Faça login para acessar o fórum.");
+        closeSignupModal();
+    }
+}
+
+// Função de login de usuário
+function handleLogin(event) {
+    event.preventDefault();
+    const username = document.getElementById("loginUsername").value;
+    const password = document.getElementById("loginPassword").value;
+
+    const user = JSON.parse(localStorage.getItem("user"));
+
+    if (user && user.username === username && user.password === password) {
+        alert("Login bem-sucedido!");
+        closeLoginModal();
+        document.getElementById("forumPosts").style.display = "block"; // Exibe os posts do fórum
+        document.getElementById("forum").style.display = "block"; // Mostra a seção do fórum
+    } else {
+        alert("Usuário ou senha inválidos.");
+    }
+}
+</script>
+
+</body>
+</html>
